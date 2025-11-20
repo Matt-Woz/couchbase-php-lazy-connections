@@ -1,0 +1,16 @@
+{
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./couchbase-php-client",
+            "options": {
+                "symlink": false
+            }
+        }
+    ],
+    "require": {
+        "couchbase/couchbase": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

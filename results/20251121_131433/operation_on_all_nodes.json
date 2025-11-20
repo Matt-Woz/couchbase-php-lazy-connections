@@ -1,0 +1,382 @@
+{
+    "experiment": {
+        "name": "operation_on_all_nodes",
+        "bootstrap_node": 0,
+        "op_nodes": "all",
+        "op": "get",
+        "bucket": "default",
+        "concurrency_levels": [
+            1,
+            100,
+            300,
+            500
+        ]
+    },
+    "results": {
+        "lazy_false": {
+            "1": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 21
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 20
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 20
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 20
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 2
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 1
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 1
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 1
+                    },
+                    "overall": 5
+                }
+            },
+            "100": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 219
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 119
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 119
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 119
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 200
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 100
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 100
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 100
+                    },
+                    "overall": 500
+                }
+            },
+            "300": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 357
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 188
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 188
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 188
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 338
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 169
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 169
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 169
+                    },
+                    "overall": 845
+                }
+            },
+            "500": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 563
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 291
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 291
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 291
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 544
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 272
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 272
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 272
+                    },
+                    "overall": 1360
+                }
+            }
+        },
+        "lazy_true": {
+            "1": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 21
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 20
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 20
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 20
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 2
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 1
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 1
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 1
+                    },
+                    "overall": 5
+                }
+            },
+            "100": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 219
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 119
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 119
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 119
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 200
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 100
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 100
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 100
+                    },
+                    "overall": 500
+                }
+            },
+            "300": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 353
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 186
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 186
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 186
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 334
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 167
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 167
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 167
+                    },
+                    "overall": 835
+                }
+            },
+            "500": {
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 411
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 215
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 215
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 215
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 392
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 196
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 196
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 196
+                    },
+                    "overall": 980
+                }
+            }
+        }
+    },
+    "timestamp": "2025-11-21T13:14:50+00:00"
+}

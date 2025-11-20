@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "99188a1192e115b90a0933081860c098",
+    "packages": [
+        {
+            "name": "couchbase/couchbase",
+            "version": "dev-3d7de999c58cee43eda2b9c41258dcd01df57d82",
+            "dist": {
+                "type": "path",
+                "url": "./couchbase-php-client",
+                "reference": "792869bf581ea71cc3c8845c7e0e8773830af590"
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "require-dev": {
+                "ext-sockets": "*",
+                "phpunit/phpunit": "^9"
+            },
+            "suggest": {
+                "ext-grpc": "^1.15",
+                "ext-protobuf": "^3.21",
+                "google/common-protos": "^3.1",
+                "google/protobuf": "^3.21",
+                "grpc/grpc": "^1.42"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Couchbase\\": "Couchbase/",
+                    "Couchbase\\Protostellar\\": "Couchbase/Protostellar",
+                    "GPBMetadata\\Couchbase\\": "GPBMetadata/Couchbase"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Avseyev",
+                    "email": "sergey.avseyev@gmail.com"
+                }
+            ],
+            "description": "The PHP client library provides fast access to documents stored in a Couchbase Server.",
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

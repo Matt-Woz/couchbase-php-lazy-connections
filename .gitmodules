@@ -1,0 +1,3 @@
+[submodule "src/couchbase-php-client"]
+	path = src/couchbase-php-client
+	url = https://github.com/Matt-Woz/couchbase-php-client
