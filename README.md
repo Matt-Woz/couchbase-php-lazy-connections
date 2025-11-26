@@ -60,9 +60,9 @@ An experiment entry looks like this:
 
 ```
   {
-    "name": "different_node_bootstrap_operation",
-    "bootstrap_node": 0,
-    "op_nodes": "1",
+    "name": "operation_on_different_node_from_bootstrap",
+    "bootstrap_node": [0, 1, 2, 3],
+    "op_nodes": "not_bootstrap",
     "op": "get",
     "bucket": "default",
     "concurrency_levels": [1, 100, 300]
@@ -72,8 +72,12 @@ You can modify or add new experiments within the experiments json file.
 
 The fields are as follows:
 - `name`: A unique name for the experiment.
-- `bootstrap_node`: Index of the node to use for bootstrapping the cluster connection (refers to the order in `nodes.json`).
-- `op_nodes`: Comma-separated list of node indices to target for operations (refers to the order in `nodes.json`).
+- `bootstrap_node`: Array of node indexes to randomly select to bootstrap from (refers to the order in `nodes.json`).
+- `op_nodes`: Comma-separated list of node indices to target for operations (refers to the order in `nodes.json`), or special options:
+  - `bootstrap` - use the same node as bootstrap
+  - `not_bootstrap` - use any node that is not the bootstrap node
+  - `all` - use all nodes
+  - `none` - do not perform any operations
 - `op`: The KV operation to perform. Possible values: `'get'`, `'none'`.
 - `bucket`: The bucket name to connect to, defaults to `default`. The scope/collection is always `_default._default`.
 - `concurrency_levels`: Array of concurrency levels to test.
