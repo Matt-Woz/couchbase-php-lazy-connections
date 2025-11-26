@@ -1,23 +1,29 @@
 {
     "experiment": {
         "name": "only_cluster_bootstrap_no_operation",
-        "bootstrap_node": 0,
+        "bootstrap_node": [
+            0,
+            1,
+            2,
+            3
+        ],
         "op_nodes": "",
         "op": "none",
         "bucket": "default",
         "concurrency_levels": [
             1,
             100,
-            300,
-            500
+            300
         ]
     },
     "results": {
         "lazy_false": {
             "1": {
+                "bootstrap_node": 2,
+                "op_nodes": [],
                 "metrics_before": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 13
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
@@ -31,13 +37,13 @@
                 },
                 "metrics_after": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 21
+                        "kv_curr_connections": 14
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 20
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 20
+                        "kv_curr_connections": 21
                     },
                     "192.168.106.131": {
                         "kv_curr_connections": 20
@@ -45,24 +51,30 @@
                 },
                 "metrics_delta": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 2
+                        "kv_curr_connections": 1
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 1
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 1
+                        "kv_curr_connections": 2
                     },
                     "192.168.106.131": {
                         "kv_curr_connections": 1
                     },
                     "overall": 5
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
                 }
             },
             "100": {
+                "bootstrap_node": 3,
+                "op_nodes": [],
                 "metrics_before": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 13
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
@@ -76,7 +88,7 @@
                 },
                 "metrics_after": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 219
+                        "kv_curr_connections": 113
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 119
@@ -85,12 +97,12 @@
                         "kv_curr_connections": 119
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 119
+                        "kv_curr_connections": 219
                     }
                 },
                 "metrics_delta": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 200
+                        "kv_curr_connections": 100
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 100
@@ -99,15 +111,21 @@
                         "kv_curr_connections": 100
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 100
+                        "kv_curr_connections": 200
                     },
                     "overall": 500
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
                 }
             },
             "300": {
+                "bootstrap_node": 3,
+                "op_nodes": [],
                 "metrics_before": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 13
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
@@ -121,85 +139,46 @@
                 },
                 "metrics_after": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 521
+                        "kv_curr_connections": 173
                     },
                     "192.168.106.129": {
-                        "kv_curr_connections": 270
+                        "kv_curr_connections": 179
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 270
+                        "kv_curr_connections": 179
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 270
+                        "kv_curr_connections": 339
                     }
                 },
                 "metrics_delta": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 502
+                        "kv_curr_connections": 160
                     },
                     "192.168.106.129": {
-                        "kv_curr_connections": 251
+                        "kv_curr_connections": 160
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 251
+                        "kv_curr_connections": 160
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 251
+                        "kv_curr_connections": 320
                     },
-                    "overall": 1255
-                }
-            },
-            "500": {
-                "metrics_before": {
-                    "192.168.106.128": {
-                        "kv_curr_connections": 19
-                    },
-                    "192.168.106.129": {
-                        "kv_curr_connections": 19
-                    },
-                    "192.168.106.130": {
-                        "kv_curr_connections": 19
-                    },
-                    "192.168.106.131": {
-                        "kv_curr_connections": 19
-                    }
+                    "overall": 800
                 },
-                "metrics_after": {
-                    "192.168.106.128": {
-                        "kv_curr_connections": 433
-                    },
-                    "192.168.106.129": {
-                        "kv_curr_connections": 226
-                    },
-                    "192.168.106.130": {
-                        "kv_curr_connections": 226
-                    },
-                    "192.168.106.131": {
-                        "kv_curr_connections": 226
-                    }
-                },
-                "metrics_delta": {
-                    "192.168.106.128": {
-                        "kv_curr_connections": 414
-                    },
-                    "192.168.106.129": {
-                        "kv_curr_connections": 207
-                    },
-                    "192.168.106.130": {
-                        "kv_curr_connections": 207
-                    },
-                    "192.168.106.131": {
-                        "kv_curr_connections": 207
-                    },
-                    "overall": 1035
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
                 }
             }
         },
         "lazy_true": {
             "1": {
+                "bootstrap_node": 2,
+                "op_nodes": [],
                 "metrics_before": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 13
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
@@ -213,16 +192,16 @@
                 },
                 "metrics_after": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 20
+                        "kv_curr_connections": 14
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 20
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 20
+                        "kv_curr_connections": 19
                     }
                 },
                 "metrics_delta": {
@@ -233,18 +212,24 @@
                         "kv_curr_connections": 0
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 0
-                    },
-                    "192.168.106.131": {
                         "kv_curr_connections": 1
                     },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 0
+                    },
                     "overall": 2
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
                 }
             },
             "100": {
+                "bootstrap_node": 3,
+                "op_nodes": [],
                 "metrics_before": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 13
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
@@ -258,38 +243,44 @@
                 },
                 "metrics_after": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 145
+                        "kv_curr_connections": 38
                     },
                     "192.168.106.129": {
-                        "kv_curr_connections": 44
+                        "kv_curr_connections": 40
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 44
+                        "kv_curr_connections": 41
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 43
+                        "kv_curr_connections": 151
                     }
                 },
                 "metrics_delta": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 126
+                        "kv_curr_connections": 25
                     },
                     "192.168.106.129": {
-                        "kv_curr_connections": 25
+                        "kv_curr_connections": 21
                     },
                     "192.168.106.130": {
-                        "kv_curr_connections": 25
+                        "kv_curr_connections": 22
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 24
+                        "kv_curr_connections": 132
                     },
                     "overall": 200
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
                 }
             },
             "300": {
+                "bootstrap_node": 3,
+                "op_nodes": [],
                 "metrics_before": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 19
+                        "kv_curr_connections": 13
                     },
                     "192.168.106.129": {
                         "kv_curr_connections": 19
@@ -303,80 +294,39 @@
                 },
                 "metrics_after": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 246
+                        "kv_curr_connections": 64
                     },
                     "192.168.106.129": {
-                        "kv_curr_connections": 63
-                    },
-                    "192.168.106.130": {
-                        "kv_curr_connections": 52
-                    },
-                    "192.168.106.131": {
-                        "kv_curr_connections": 47
-                    }
-                },
-                "metrics_delta": {
-                    "192.168.106.128": {
-                        "kv_curr_connections": 227
-                    },
-                    "192.168.106.129": {
-                        "kv_curr_connections": 44
-                    },
-                    "192.168.106.130": {
-                        "kv_curr_connections": 33
-                    },
-                    "192.168.106.131": {
-                        "kv_curr_connections": 28
-                    },
-                    "overall": 332
-                }
-            },
-            "500": {
-                "metrics_before": {
-                    "192.168.106.128": {
-                        "kv_curr_connections": 19
-                    },
-                    "192.168.106.129": {
-                        "kv_curr_connections": 19
-                    },
-                    "192.168.106.130": {
-                        "kv_curr_connections": 19
-                    },
-                    "192.168.106.131": {
-                        "kv_curr_connections": 19
-                    }
-                },
-                "metrics_after": {
-                    "192.168.106.128": {
-                        "kv_curr_connections": 214
-                    },
-                    "192.168.106.129": {
-                        "kv_curr_connections": 58
+                        "kv_curr_connections": 61
                     },
                     "192.168.106.130": {
                         "kv_curr_connections": 57
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 55
+                        "kv_curr_connections": 214
                     }
                 },
                 "metrics_delta": {
                     "192.168.106.128": {
-                        "kv_curr_connections": 195
+                        "kv_curr_connections": 51
                     },
                     "192.168.106.129": {
-                        "kv_curr_connections": 39
+                        "kv_curr_connections": 42
                     },
                     "192.168.106.130": {
                         "kv_curr_connections": 38
                     },
                     "192.168.106.131": {
-                        "kv_curr_connections": 36
+                        "kv_curr_connections": 195
                     },
-                    "overall": 308
+                    "overall": 326
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
                 }
             }
         }
     },
-    "timestamp": "2025-11-21T13:15:26+00:00"
+    "timestamp": "2025-11-26T15:21:04+00:00"
 }

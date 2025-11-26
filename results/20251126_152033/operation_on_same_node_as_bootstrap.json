@@ -1,0 +1,3632 @@
+{
+    "experiment": {
+        "name": "operation_on_same_node_as_bootstrap",
+        "bootstrap_node": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "op_nodes": "bootstrap",
+        "op": "get",
+        "bucket": "default",
+        "concurrency_levels": [
+            1,
+            100,
+            300
+        ]
+    },
+    "results": {
+        "lazy_false": {
+            "1": {
+                "bootstrap_node": 0,
+                "op_nodes": [
+                    0
+                ],
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 13
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 15
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 20
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 20
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 20
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 2
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 1
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 1
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 1
+                    },
+                    "overall": 5
+                },
+                "latency": {
+                    "latency_records": [
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 42.135516
+                        }
+                    ],
+                    "avg_latency_ms": 42.135516
+                }
+            },
+            "100": {
+                "bootstrap_node": 2,
+                "op_nodes": [
+                    2
+                ],
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 13
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 113
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 119
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 219
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 119
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 100
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 100
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 200
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 100
+                    },
+                    "overall": 500
+                },
+                "latency": {
+                    "latency_records": [
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 149.301764
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 7.620904
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 148.784932
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 2.942496
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 1.902455
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 121.567392
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 192.200821
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 221.919274
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 4.784867
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 204.115635
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 7.757279
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 1.131832
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 131.820041
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 196.878564
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 223.710105
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 108.907328
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 223.54498
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 183.712501
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 2.838537
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 193.436194
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 160.644079
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 41.499726
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 126.217051
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 54.149956
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 183.760584
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 262.753084
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 167.057236
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 96.533015
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 210.677709
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 195.896024
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 17.38593
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 223.500522
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 92.847812
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 220.172986
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 160.363997
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 265.641746
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 78.337585
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 1.837081
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 253.379641
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 143.425982
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 313.694212
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 8.016029
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.839411
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 41.940392
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 5.425491
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 91.776397
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.641332
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 244.423364
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 154.89313
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 156.082461
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 175.24889
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 195.668941
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 215.432368
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 172.850769
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 18.739012
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 177.85201
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 133.278831
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 332.807682
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 204.244636
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 67.674268
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 12.692188
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 174.543183
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.02562
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 95.73464
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 257.062969
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 205.695967
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 227.257849
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.773994
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 210.447792
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 232.724548
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 5.237201
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 127.937631
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 69.300933
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 131.98075
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 13.276437
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 17.027015
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 275.041857
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.109703
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 214.437702
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 64.497814
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 206.488591
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 15.111768
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 201.079848
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.707202
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 156.022337
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 210.041127
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.10887
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 250.070688
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 193.507986
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 146.021645
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.421958
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 71.84622
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 222.816689
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 154.678756
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 142.144234
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 130.218628
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 83.46216
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 61.398736
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 1.83058
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 228.64443
+                        }
+                    ],
+                    "avg_latency_ms": 128.26917519
+                }
+            },
+            "300": {
+                "bootstrap_node": 0,
+                "op_nodes": [
+                    0
+                ],
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 13
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 381
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 203
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 203
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 203
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 368
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 184
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 184
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 184
+                    },
+                    "overall": 920
+                },
+                "latency": {
+                    "latency_records": [
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 214.770536
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 131.057127
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 333.413766
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 167.135111
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 4.9632
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 194.25936
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.396197
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 233.199965
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 467.040472
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 187.726204
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.09503
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 466.842514
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 454.656575
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 222.268316
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 325.187362
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 395.79325
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 400.189286
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 4.097577
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 329.303523
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.671996
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 6.081823
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 403.127364
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 344.595123
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 238.254333
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 392.519715
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 407.252942
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 393.478505
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 372.18458
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 206.419591
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 438.528475
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 424.546664
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 6.812531
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 236.771085
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 339.151799
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 17.001723
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 226.567351
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 4.664451
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 472.170756
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 4.244451
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 344.915498
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 188.245578
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 297.684864
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 399.063704
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 206.342342
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 194.160319
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 20.295677
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 137.437908
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 231.425802
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 312.243175
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 135.119287
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 565.058734
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 320.597036
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 228.516765
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 363.987968
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.155083
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 12.012981
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 371.488623
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 264.972749
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.709196
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 145.565854
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 486.442317
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 204.301803
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 279.713934
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 325.874528
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 553.912502
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.21783
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 288.208755
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 324.503822
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 276.162231
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 501.010085
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 306.6126
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 315.743252
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 470.7593
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.35162
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 8.509528
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 566.924857
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 8.79482
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 497.75809
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 47.263509
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 288.806586
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 329.184023
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 540.127232
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 22.815089
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 44.261139
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 282.902179
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 430.389488
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 499.28963
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 161.629328
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 345.072373
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 16.999681
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 382.790021
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 586.169367
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.924328
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 6.867489
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 505.669286
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 425.633913
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 433.637025
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 173.898601
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 318.354957
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 539.930441
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 14.143436
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 262.566044
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 188.559661
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 568.69652
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 222.373692
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 377.354363
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 417.721217
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.196583
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 433.063984
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 321.670368
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 431.095987
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 248.462108
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 37.268442
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 465.883224
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 459.345067
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 423.354375
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 498.166839
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.29208
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 167.01332
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 588.772322
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 227.730266
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 452.432745
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 311.22526
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 225.863269
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 503.835414
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 8.239029
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 416.94876
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 145.323771
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.136662
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 473.621086
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 530.001664
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.789411
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 8.272779
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.227163
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 213.922871
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 353.438901
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 14.610727
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 336.903511
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 289.999918
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.687363
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 444.001592
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 396.116167
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 150.466346
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 320.822911
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 205.192969
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 458.928693
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 122.501056
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 429.178656
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 32.430907
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 5.053158
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 229.14518
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 341.004587
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.90091
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 264.928749
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.211708
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 331.237145
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 6.552656
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 19.12372
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 511.303652
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 288.570671
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 398.959163
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 271.402739
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 354.742566
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 103.481129
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 305.853351
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 453.910326
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 5.423242
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 384.860477
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 327.558234
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 546.626763
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 352.926943
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 522.860217
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 353.857776
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 554.236209
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 443.257843
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 209.503836
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 419.571589
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 366.79188
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 355.284231
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 415.127012
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 205.342843
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 341.416586
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 357.663978
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.407655
+                        }
+                    ],
+                    "avg_latency_ms": 268.00437801086946
+                }
+            }
+        },
+        "lazy_true": {
+            "1": {
+                "bootstrap_node": 0,
+                "op_nodes": [
+                    0
+                ],
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 13
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 15
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 2
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 0
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 0
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 0
+                    },
+                    "overall": 2
+                },
+                "latency": {
+                    "latency_records": [
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 1.136873
+                        }
+                    ],
+                    "avg_latency_ms": 1.136873
+                }
+            },
+            "100": {
+                "bootstrap_node": 2,
+                "op_nodes": [
+                    2
+                ],
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 13
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 45
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 45
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 219
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 39
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 32
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 26
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 200
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 20
+                    },
+                    "overall": 278
+                },
+                "latency": {
+                    "latency_records": [
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 34.89582
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 70.166097
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 32.179491
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 39.875062
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 41.569934
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 6.039491
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 12.078689
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 99.47026
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 26.4405
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 18.863637
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.956248
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 78.375377
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 67.814976
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 1.418914
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 11.593981
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 26.265875
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 29.216246
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 14.765518
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 49.668297
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 52.541625
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 50.791836
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 32.156366
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 2.827287
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 52.260334
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 105.213917
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 45.434303
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 22.965464
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 104.484294
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 134.786745
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 40.595811
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.398791
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.178416
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 19.766678
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 19.886426
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 2.771037
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 42.381558
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 12.929438
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 79.679166
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.890373
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 99.521385
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 30.105077
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 84.791449
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 20.995967
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 16.896723
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 65.703771
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 18.391679
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 52.354876
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 5.838907
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 77.263879
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.83829
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.264416
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 118.101689
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 42.085558
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 100.941674
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 63.746275
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 94.707559
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.491374
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 43.583265
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 6.303615
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.310703
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 39.687395
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 40.632103
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 26.324791
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 6.229907
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.787166
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 39.845896
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 48.496674
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 35.494861
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 55.406621
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 46.000761
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 48.037133
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 12.548106
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 19.491011
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 107.46383
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 107.128623
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 32.343491
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 74.078674
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 43.564973
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 30.55441
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 90.563399
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 65.930854
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 34.581987
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 22.108257
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 37.349566
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 36.915192
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.233416
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 3.597744
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 6.700864
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 5.809699
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 11.298815
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 21.966382
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 1.438581
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 47.452175
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.497791
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 2.159872
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 12.821605
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 17.598597
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 0.183
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 34.778986
+                        },
+                        {
+                            "node_index": 2,
+                            "node_host": "192.168.106.130",
+                            "doc_id": "c00000",
+                            "latency_ms": 42.025309
+                        }
+                    ],
+                    "avg_latency_ms": 37.40960926000001
+                }
+            },
+            "300": {
+                "bootstrap_node": 0,
+                "op_nodes": [
+                    0
+                ],
+                "metrics_before": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 13
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 19
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 19
+                    }
+                },
+                "metrics_after": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 335
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 64
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 53
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 65
+                    }
+                },
+                "metrics_delta": {
+                    "192.168.106.128": {
+                        "kv_curr_connections": 322
+                    },
+                    "192.168.106.129": {
+                        "kv_curr_connections": 45
+                    },
+                    "192.168.106.130": {
+                        "kv_curr_connections": 34
+                    },
+                    "192.168.106.131": {
+                        "kv_curr_connections": 46
+                    },
+                    "overall": 447
+                },
+                "latency": {
+                    "latency_records": [
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 81.500538
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 140.031571
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 104.236586
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 59.426615
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 242.042035
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 104.516128
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 155.521797
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 160.68308
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 74.099009
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 18.380054
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 44.346847
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.440207
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 220.56682
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 9.122361
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 199.925477
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 189.147785
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 177.704428
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 76.428421
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 178.700719
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 189.473035
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 25.558127
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.369995
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 51.717919
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.202875
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 173.364144
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 26.154334
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 6.170407
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 56.155328
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 19.252803
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 48.070674
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.854327
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 5.696616
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 213.666914
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 27.710957
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.341833
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 11.845814
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 191.371949
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 22.453589
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 163.153076
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 102.112005
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 1.909122
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 93.300062
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 77.471544
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 87.245655
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.953904
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 10.067443
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 232.944175
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 149.548931
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 5.100201
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.954082
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 289.972085
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 22.532589
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 48.421715
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 153.042426
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 135.352621
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 35.077861
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 83.690285
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 186.031166
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 163.892242
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.324457
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 55.813704
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 9.187485
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.66262
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 107.90608
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 7.757571
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 80.424749
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 197.17294
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 35.817152
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 115.885484
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 157.719252
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 70.262597
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 259.6033
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 238.220542
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 72.638011
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 53.11275
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 44.847638
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 4.682367
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 11.991397
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 185.404459
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 82.654953
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 169.532066
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.082122
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 12.337772
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 15.709559
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 155.512006
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 140.664195
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 113.10903
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.316705
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 118.137439
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.407749
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 126.56255
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 196.521899
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 5.330825
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 126.878342
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 66.828645
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 32.446532
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 66.666645
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 12.570063
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 172.418937
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 1.212915
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 85.335699
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 187.308288
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 0.232375
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 68.840516
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 196.475108
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 10.599233
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 105.312168
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 69.562724
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 208.788505
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 119.500812
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 1.526831
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 54.890121
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 115.635401
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 21.624091
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 151.674553
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 242.945868
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 17.590972
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 2.256122
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 74.062967
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 84.333326
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 188.782744
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 19.492928
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 10.129359
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 158.991541
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 170.251024
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 101.884298
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 140.618612
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 129.347713
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 153.768591
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 169.362067
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 183.421086
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 75.24509
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 66.944895
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 26.60275
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 184.092585
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 41.846434
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 67.368644
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 60.830821
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 119.30502
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 56.362369
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 53.040417
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 189.709284
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 278.203729
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 53.910915
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 122.518848
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 1.726997
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 49.47363
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 158.786292
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 19.698594
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 96.978597
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 3.903661
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 48.565007
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 251.945062
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 184.250752
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 5.552575
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 220.845944
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 56.734244
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 168.892234
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 264.913541
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 124.933929
+                        },
+                        {
+                            "node_index": 0,
+                            "node_host": "192.168.106.128",
+                            "doc_id": "100000",
+                            "latency_ms": 174.796392
+                        }
+                    ],
+                    "avg_latency_ms": 94.20425904968945
+                }
+            }
+        }
+    },
+    "timestamp": "2025-11-26T15:20:33+00:00"
+}
