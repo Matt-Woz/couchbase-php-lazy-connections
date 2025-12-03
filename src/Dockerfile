@@ -14,15 +14,13 @@ WORKDIR /usr/src/couchbase-php-client
  RUN ./bin/build.rb
  RUN cp ./modules/couchbase.so $(php -r "echo ini_get('extension_dir');")/
 
-RUN docker-src-ext-enable couchbase
+RUN docker-php-ext-enable couchbase
 
 WORKDIR /var/www/html
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 COPY composer.json composer.lock* ./
 COPY couchbase-php-client ./couchbase-php-client
 RUN composer install --no-interaction --prefer-dist
 
 COPY . .
-COPY php-fpm.conf /usr/local/etc/php-fpm.conf
-
-
-
+COPY php-fpm.conf /usr/local/etc/php-fpm.d/zz-custom.conf
