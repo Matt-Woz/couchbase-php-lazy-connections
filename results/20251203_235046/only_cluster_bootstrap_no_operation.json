@@ -1,0 +1,332 @@
+{
+    "experiment": {
+        "name": "only_cluster_bootstrap_no_operation",
+        "bootstrap_node": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "op_nodes": "",
+        "op": "none",
+        "bucket": "default",
+        "concurrency_levels": [
+            1,
+            100,
+            300
+        ]
+    },
+    "results": {
+        "lazy_false": {
+            "1": {
+                "bootstrap_node": 1,
+                "op_nodes": [],
+                "metrics_before": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 46
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 41
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_after": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 31
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 48
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 42
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 42
+                    }
+                },
+                "metrics_delta": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 1
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 2
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 1
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 1
+                    },
+                    "overall": 5
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
+                }
+            },
+            "100": {
+                "bootstrap_node": 2,
+                "op_nodes": [],
+                "metrics_before": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 46
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 41
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_after": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 130
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 146
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 241
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 141
+                    }
+                },
+                "metrics_delta": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 100
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 100
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 200
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 100
+                    },
+                    "overall": 500
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
+                }
+            },
+            "300": {
+                "bootstrap_node": 3,
+                "op_nodes": [],
+                "metrics_before": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 46
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 41
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_after": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 330
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 346
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 341
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 641
+                    }
+                },
+                "metrics_delta": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 300
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 300
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 300
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 600
+                    },
+                    "overall": 1500
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
+                }
+            }
+        },
+        "lazy_true": {
+            "1": {
+                "bootstrap_node": 1,
+                "op_nodes": [],
+                "metrics_before": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 46
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 41
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_after": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 47
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 42
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_delta": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 0
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 1
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 1
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 0
+                    },
+                    "overall": 2
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
+                }
+            },
+            "100": {
+                "bootstrap_node": 2,
+                "op_nodes": [],
+                "metrics_before": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 46
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 41
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_after": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 59
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 67
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 171
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 61
+                    }
+                },
+                "metrics_delta": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 29
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 21
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 130
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 20
+                    },
+                    "overall": 200
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
+                }
+            },
+            "300": {
+                "bootstrap_node": 3,
+                "op_nodes": [],
+                "metrics_before": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 30
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 46
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 41
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 41
+                    }
+                },
+                "metrics_after": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 107
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 121
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 121
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 409
+                    }
+                },
+                "metrics_delta": {
+                    "172.18.0.4": {
+                        "kv_curr_connections": 77
+                    },
+                    "172.18.0.5": {
+                        "kv_curr_connections": 75
+                    },
+                    "172.18.0.6": {
+                        "kv_curr_connections": 80
+                    },
+                    "172.18.0.7": {
+                        "kv_curr_connections": 368
+                    },
+                    "overall": 600
+                },
+                "latency": {
+                    "latency_records": [],
+                    "avg_latency_ms": null
+                }
+            }
+        }
+    },
+    "timestamp": "2025-12-03T23:51:24+00:00"
+}
