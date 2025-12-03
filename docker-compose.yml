@@ -10,7 +10,8 @@ services:
       - ./src:/var/www/html
     depends_on:
       - php
-
+    networks:
+      - dinonet
   php:
     build: src
     container_name: src-sdk-test
@@ -19,10 +20,9 @@ services:
       - ./src:/var/www/html
       - ./config:/config
       - ./src/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf
-
     networks:
       - dinonet
-      - default
+
 networks:
   dinonet:
     external: true

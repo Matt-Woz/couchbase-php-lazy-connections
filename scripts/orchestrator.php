@@ -169,5 +169,5 @@ echo "All experiments completed.\n";
 
 echo "Generating charts...\n";
 
-$cmd = "python plot_results.py $resultsDir";
+$cmd = "python " . __DIR__ . "/plot_results.py $resultsDir";
 exec($cmd);
